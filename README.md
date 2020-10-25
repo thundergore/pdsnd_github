@@ -7,11 +7,11 @@ Bikeshare Udacity Course Project.
 ### Description
 This project is a python script (numpy/pandas) that works with 3 cities worth of csv data and takes in user input from command line to provide them with filtered data.
 
-The project is built while working through Udacity's Data science nanodegree program. 
+The project is built while working through Udacity's Data science nanodegree program.
 
 ### Files used
-washington.csv
-new_york_city.csv
+washington.csv  
+new_york_city.csv  
 chicago.csv
 
 ### Credits
