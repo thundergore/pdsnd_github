@@ -1,15 +1,16 @@
 ### Date created
-Include the date you created this project and README file.
+Original project created 2020-10-16. Repository created 2020-10-24
 
 ### Project Title
-Replace the Project Title
+Bikeshare Udacity Course Project
 
 ### Description
-Describe what your project is about and what it does
+This project is a python script (numpy/pandas) that works with 3 cities worth of csv data and takes in user input from command line to provide them with filtered data
 
 ### Files used
-Include the files used
+washington.csv
+new_york_city.csv
+chicago.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Credits included in file "bikeshare sources"
