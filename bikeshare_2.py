@@ -98,7 +98,7 @@ def time_stats(df):
     common_hour = df['hour'].mode()[0]
     print('\n Most common hour of travel is: ', common_hour)
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round((time.time() - start_time), 3))
     print('-'*40)
 
 
@@ -118,7 +118,7 @@ def station_stats(df):
     common_combo = df.groupby(['Start Station','End Station']).size().idxmax()
     print('\nThe most common combination of departure/arrival stations is: ', common_combo)
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round((time.time() - start_time), 3))
     print('-'*40)
 
 
@@ -136,7 +136,7 @@ def trip_duration_stats(df):
     mean_travel_time = df['Trip Duration'].mean()
     print("\nThe mean travel time for trips in this data slice is: ", mean_travel_time)
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round((time.time() - start_time), 3))
     print('-'*40)
 
 
@@ -161,7 +161,8 @@ def user_stats(df, city):
         latest_yob = df['Birth Year'].max()
         most_common_yob = df['Birth Year'].mode()[0]
         print("\nThe most common birth year is {}. The earliest birth year is {}. And the latest birth year is {}.".format(int(most_common_yob), int(earliest_yob), int(latest_yob)))
-    print("\nThis took %s seconds." % (time.time() - start_time))
+
+    print("\nThis took %s seconds." % round((time.time() - start_time), 3))
     print('-'*40)
 
 
