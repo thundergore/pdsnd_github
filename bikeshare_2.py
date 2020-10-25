@@ -148,7 +148,7 @@ def user_stats(df, city):
 
     # Display counts of user types
     user_type_count = df['User Type'].value_counts()
-    print("\n The user type count is: ", user_type_count)
+    print("\nThe user type count is: ", user_type_count)
 
     # Display counts of gender
     #After an embarassing amount of debugging I realised Washington is missing last 2 columns
